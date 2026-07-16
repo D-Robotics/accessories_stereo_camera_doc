@@ -28,7 +28,7 @@ function normalizePath(path) {
 
 function normalizePathTail(path) {
   return normalizePath(path)
-    .replace(/^\/rdk_s_doc\//, "/")
+    .replace(/^\/rdk_accessories_gs130w_doc\//, "/")
     .replace(/^\/en\//, "/");
 }
 

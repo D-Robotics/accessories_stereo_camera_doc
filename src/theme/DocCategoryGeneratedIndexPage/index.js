@@ -149,7 +149,7 @@ function normalizePathTail(permalink) {
   if (!normalized) return '';
   // 兼容有/无 baseUrl 与有/无 locale 前缀的场景
   return normalized
-    .replace(/^\/rdk_s_doc\//, '/')
+    .replace(/^\/rdk_accessories_gs130w_doc\//, '/')
     .replace(/^\/en\//, '/');
 }
 

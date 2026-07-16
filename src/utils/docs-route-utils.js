@@ -7,7 +7,7 @@ export const MULTI_INSTANCE_DOC_PREFIXES = new Set();
 /**
  * 当前路径是否属于「非主手册」的独立 docs 插件。
  * @param {string} pathname window.location 风格，含 baseUrl
- * @param {string} baseUrl 站点 baseUrl，如 "/rdk_x_doc/"
+ * @param {string} baseUrl 站点 baseUrl，如 "/rdk_accessories_gs130w_doc/"
  * @param {string} currentLocale
  * @param {string} defaultLocale
  */
