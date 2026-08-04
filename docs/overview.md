@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /overview
 ---
 
-# RDK 双目相机手册
+# RDK 双目摄像头手册
 
 本文档面向 D-Robotics RDK 开发者套件配套的双目摄像头模组，提供选型、安装、点亮与二次开发指引。
 
