@@ -37,7 +37,7 @@ const config = {
   // url: resolvedSiteUrl,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/accessories_doc/",
+  baseUrl: "/accessories_stereo_camera_doc/",
   customFields: {
     docBuildScope:
       buildProduct && buildVersion
@@ -70,7 +70,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "D-Robotics", // Usually your GitHub org/user name.
-  projectName: "accessories_doc", // Usually your repo name.
+  projectName: "accessories_stereo_camera_doc", // Usually your repo name.
 
   // onBrokenLinks: 'throw',
 
