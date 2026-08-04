@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 2.3 快速开始
+# 快速开始
 
 目前支持基于 TogetheROS.Bot（TROS）平台运行 GS130WI 相机。
 
@@ -104,4 +104,4 @@ ros2 launch mipi_cam mipi_cam_dual_channel_websocket.launch.py
 
 **4. PC 打开浏览器（chrome/firefox/edge）输入 `http://IP:8000`（IP 为 RDK IP 地址），点击左上方 Web 端展示即可看到双目输出的实时画面。**
 
-![Web 端双目预览](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_web_preview.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_web_preview.png" alt="Web 端双目预览" width="80%" />

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "2.4 Hardware Reference"
+title: "Hardware Reference"
 ---
 
 # Hardware Reference
@@ -9,7 +9,7 @@ title: "2.4 Hardware Reference"
 
 The GS130WI module has a mounting hole at each end. Dimensions are shown below (Unit: mm). Detailed 3D model files are available in [Downloads](./06_downloads.md). Use two M2.5 bolts through these mounting holes to attach the GS130WI module to other structures.
 
-![GS130WI structural dimensions](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_structure_dimensions.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_structure_dimensions.png" alt="GS130WI structural dimensions" width="80%" />
 
 :::tip Note
 
@@ -23,11 +23,11 @@ When installing, place washers at the counterbore locations and tighten the bolt
 
 The diagram below shows the hardware topology between the GS130WI module and the RDK development board.
 
-![GS130WI hardware topology](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_hardware_topology.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_hardware_topology.png" alt="GS130WI hardware topology" width="80%" />
 
 ### Connector Models
 
-![GS130WI connector models](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_connector_models.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_connector_models.png" alt="GS130WI connector models" width="70%" />
 
 | Connector | Model | Manufacturer |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ This interface is used for right camera and IMU data transmission.
 
 The connector PIN1 location is shown below:
 
-![Right MIPI PIN1 location](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/en/gs130wi_right_mipi_pin1.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/en/gs130wi_right_mipi_pin1.png" alt="Right MIPI PIN1 location" width="50%" />
 
 The connector pinout is shown in the table below:
 
@@ -111,7 +111,7 @@ This interface is used for receiving interrupt signals from the IMU or sending i
 
 The connector PIN1 location is shown below:
 
-![External interrupt interface PIN1 location](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/en/gs130wi_ext_int_pin1.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/en/gs130wi_ext_int_pin1.png" alt="External interrupt interface PIN1 location" width="50%" />
 
 The connector pinout is shown in the table below:
 

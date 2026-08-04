@@ -8,7 +8,7 @@ sidebar_position: 4
 
 The GS130W module has two mounting holes at each end. Dimensions are shown below (Unit: mm). For detailed 3D model files, see [Downloads](./06_downloads.md). Use four M3 bolts through these mounting holes to secure the GS130W module to other structures.
 
-![GS130W mechanical dimensions](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_structure_dimensions.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_structure_dimensions.png" alt="GS130W mechanical dimensions" width="80%" />
 
 :::tip Note
 
@@ -22,11 +22,11 @@ During installation, place washers at the mounting holes and tighten the bolts a
 
 The diagram below shows the hardware topology between the GS130W module and the RDK development board.
 
-![GS130W hardware topology](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_topology.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_topology.png" alt="GS130W hardware topology" width="80%" />
 
 ### Connector Models
 
-![GS130W connector models](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connector_models.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connector_models.png" alt="GS130W connector models" width="70%" />
 
 
 | Connector | Model | Manufacturer |
@@ -42,7 +42,7 @@ This interface is used for right camera and IMU data transmission.
 
 The connector PIN1 position is shown below:
 
-![Right MIPI PIN1 position](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/en/gs130w_right_mipi_pin1.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/en/gs130w_right_mipi_pin1.png" alt="Right MIPI PIN1 position" width="50%" />
 
 The connector pinout is shown in the table below:
 

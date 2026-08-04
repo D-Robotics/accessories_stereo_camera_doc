@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The RDK™ Stereo Camera GS130W is a MIPI-based stereo depth camera equipped with dual SC132GS global shutter sensors. It supports synchronized stereo exposure and external triggering. The camera has an 80 mm baseline, single-channel resolution of 1280×1080, and a maximum output frame rate of 120 fps. With high dynamic range (HDR), high signal-to-noise ratio (40 dB), and 850/940 nm near-infrared enhancement, it is suited for robotics vision, machine vision inspection, and real-time motion monitoring applications.
 
-![GS130W product overview](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_product_overview.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_product_overview.png" alt="GS130W product overview" width="70%" />
 
 
 ## Compatible Boards
@@ -25,7 +25,7 @@ The table below lists compatibility between this product and RDK developer kit b
 
 ## Hardware Interfaces
 
-![GS130W hardware interfaces](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_interfaces.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_interfaces.png" alt="GS130W hardware interfaces" width="70%" />
 
 1. Right MIPI Camera interface: used for right camera data transmission;
 2. Left MIPI Camera interface: used for left camera data transmission;

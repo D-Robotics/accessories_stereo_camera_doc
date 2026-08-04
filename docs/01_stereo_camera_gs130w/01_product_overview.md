@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# 1.1 产品简介
+# 产品简介
 
 RDK™ Stereo Camera GS130W 是一款基于 MIPI 接口的双目深度相机，搭载双颗 SC132GS 全局快门传感器，支持双目同步曝光与外部触发。相机基线 80mm，单路分辨率 1280×1080，最高输出帧率 120fps，具备高动态范围（HDR）、高信噪比（40dB）及 850/940nm 近红外增强能力，适用于机器人视觉、机器视觉检测和实时运动监测等应用场景。
 
-![GS130W 产品示意图](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_product_overview.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_product_overview.png" alt="GS130W 产品示意图" width="70%" />
 
 
 ## 适用板卡
@@ -25,7 +25,7 @@ RDK™ Stereo Camera GS130W 是一款基于 MIPI 接口的双目深度相机，�
 
 ## 硬件接口
 
-![GS130W 硬件接口](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_interfaces.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_interfaces.png" alt="GS130W 硬件接口" width="70%" />
 
 1. 右目 MIPI Camera 接口：用于右目相机数据传输；
 2. 左目 MIPI Camera 接口：用于左目相机数据传输；

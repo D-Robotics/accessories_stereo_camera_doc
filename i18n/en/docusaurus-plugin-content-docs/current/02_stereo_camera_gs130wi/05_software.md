@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "2.5 Software Development"
+title: "Software Development"
 ---
 
 # Software Development

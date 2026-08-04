@@ -425,13 +425,22 @@ article.markdown .table-responsive > table td {
   color: #79b8ff;
 } 
 
-/* 物品清单等表格内的示意图片 */
+/* 物品清单等表格内的示意图片（特殊位置，保持固定尺寸） */
 .markdown img.table-item-image {
   width: 220px;
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0;
+}
+
+/* 正文图片居中（表格内小图除外） */
+.markdown img:not(.table-item-image) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 /* 图片点击放大交互光标 */

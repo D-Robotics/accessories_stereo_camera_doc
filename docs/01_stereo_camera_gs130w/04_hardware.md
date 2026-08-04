@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# 1.4 硬件说明
+# 硬件说明
 
 ## 结构安装说明
 
 GS130W 模组的两端各有 2 个安装孔，尺寸信息如下图（Unit: mm），详细的 3D 模型文件见 [资料下载](./06_downloads.md)。通过该安装孔，可以使用 4 颗 M3 螺栓将 GS130W 模组固定到其他结构上。
 
-![GS130W 结构尺寸](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_structure_dimensions.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_structure_dimensions.png" alt="GS130W 结构尺寸" width="80%" />
 
 :::tip 说明
 
@@ -22,11 +22,11 @@ GS130W 模组的两端各有 2 个安装孔，尺寸信息如下图（Unit: mm�
 
 下图示意 GS130W 模组与 RDK 开发板硬件拓扑关系。
 
-![GS130W 硬件拓扑](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_topology.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_hardware_topology.png" alt="GS130W 硬件拓扑" width="80%" />
 
 ### 连接器型号
 
-![GS130W 连接器型号](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connector_models.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connector_models.png" alt="GS130W 连接器型号" width="70%" />
 
 
 | 连接器 | 连接器型号 | 连接器厂商 |
@@ -42,7 +42,7 @@ GS130W 模组的两端各有 2 个安装孔，尺寸信息如下图（Unit: mm�
 
 连接器 PIN1 位置如下图所示：
 
-![右目 MIPI PIN1 位置](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_right_mipi_pin1.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_right_mipi_pin1.png" alt="右目 MIPI PIN1 位置" width="50%" />
 
 连接器线序如下表所示：
 

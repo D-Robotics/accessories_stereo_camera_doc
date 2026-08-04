@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: "2.6 Downloads"
+title: "Downloads"
 ---
 
 # Downloads

@@ -218,11 +218,11 @@ export function DocScopeFilterProvider({ children }) {
     const enRoot = normalizePathname(`${base}en`);
     const enRootSlash = normalizePathname(`${base}en/`);
 
-    // 站点入口重定向到配件文档首页 /accessories
+    // 站点入口重定向到配件文档首页 /overview
     if (pathnameNoSlash === baseNoSlash) {
-      history.replace(`${base}accessories${location.search}${location.hash}`);
+      history.replace(`${base}overview${location.search}${location.hash}`);
     } else if (pathnameNoSlash === enRoot || pathnameNoSlash === enRootSlash) {
-      history.replace(`${base}en/accessories${location.search}${location.hash}`);
+      history.replace(`${base}en/overview${location.search}${location.hash}`);
     }
   }, [
     hasBuildScope,

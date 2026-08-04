@@ -104,4 +104,4 @@ ros2 launch mipi_cam mipi_cam_dual_channel_websocket.launch.py
 
 **4. On a PC, open a browser (Chrome/Firefox/Edge) and enter `http://IP:8000` (where IP is the RDK IP address). Click the web preview button in the upper-left corner to view the live stereo output.**
 
-![Web stereo preview](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_web_preview.png)
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_web_preview.png" alt="Web stereo preview" width="80%" />
