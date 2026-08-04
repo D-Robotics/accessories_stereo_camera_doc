@@ -15,7 +15,7 @@ import rehypeWrapTables from "./src/rehype/rehype-wrap-tables.js";
 
 const isDev = process.env.NODE_ENV !== "production";
 const resolvedBaseUrl =
-  process.env.DOCS_BASE_URL?.trim() || (isDev ? "/" : "/accessories_doc/");
+  process.env.DOCS_BASE_URL?.trim() || (isDev ? "/" : "/accessories_stereo_camera_doc/");
 const resolvedSiteUrl = process.env.DOCS_SITE_URL?.trim() || "http://localhost:3000";
 const buildProduct = process.env.DOC_BUILD_PRODUCT?.trim() || "";
 const buildVersion = process.env.DOC_BUILD_VERSION?.trim() || "";
