@@ -31,8 +31,8 @@ The diagram below shows the hardware topology between the GS130W module and the 
 
 | Connector | Model | Manufacturer |
 | --- | --- | --- |
-| 1 | AFC24-S22FIA-00 | Jushuo Electronics |
-| 2 | AFC24-S22FIA-00 | Jushuo Electronics |
+| 1 | AFC24-S22FIA-00 | JUSHUO |
+| 2 | AFC24-S22FIA-00 | JUSHUO |
 
 ### Interface Description
 
