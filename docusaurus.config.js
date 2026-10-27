@@ -258,9 +258,11 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: "1VU781LYTV",
-        apiKey: "fb65c6e54a52ce6fba0645bd2630e79b",
-        indexName: "accessories_stereo_camera_doc",
+        appId: process.env.ALGOLIA_APP_ID || "1VU781LYTV",
+        apiKey:
+          process.env.ALGOLIA_SEARCH_API_KEY || "fb65c6e54a52ce6fba0645bd2630e79b",
+        indexName:
+          process.env.ALGOLIA_INDEX_NAME || "accessories_stereo_camera_doc",
         contextualSearch: true,
         searchPagePath: "search",
       },
