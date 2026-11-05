@@ -7,6 +7,8 @@ import {parsePageHtml} from './algolia/parse-page.mjs';
 import {aggregateRecords} from './algolia/aggregate.mjs';
 import {dedupeByObjectId} from './algolia/object-id.mjs';
 import {writeSearchIndexShards} from './algolia/shards.mjs';
+import {parseBreadcrumbs} from './algolia/breadcrumbs.mjs';
+import {writeEasyopsIndex} from './algolia/easyops-index.mjs';
 import {envConfig} from './algolia/config.mjs';
 import {uploadRecords, probeIndex} from './algolia/upload.mjs';
 import {loadPageHtml} from './algolia/local-html.mjs';
@@ -43,11 +45,14 @@ async function main() {
   console.log(`[algolia-index] discovered ${urls.length} URLs`);
 
   const fine = [];
+  // MCP 索引的面包屑（b）来自页面 DOM，Algolia records 里没有这层信息。
+  const breadcrumbsByUrl = new Map();
   let errors = 0;
   for (const url of urls) {
     try {
       const html = await loadPageHtml(url, siteUrl);
       fine.push(...parsePageHtml(html, url));
+      breadcrumbsByUrl.set(url.split('#')[0], parseBreadcrumbs(html));
     } catch (e) {
       errors += 1;
       console.warn(`[algolia-index] skip ${url}: ${e.message}`);
@@ -60,6 +65,19 @@ async function main() {
 
   const outDir = path.join(process.cwd(), 'build', 'search-index');
   writeSearchIndexShards(fineDeduped, outDir);
+
+  // 一爬两出：同一批 records 既推 Algolia，也产一份 MCP 读取的本地索引。
+  // 先写文件，Algolia 上传失败时仍可人工上传索引。
+  const mcpIndexPath = path.join(
+    process.cwd(),
+    'scripts',
+    '_algolia_tmp',
+    'search-index.json',
+  );
+  writeEasyopsIndex(fineDeduped, mcpIndexPath, {
+    titleType: 'lvl0',
+    breadcrumbsByUrl,
+  });
 
   const report = {
     siteUrl,
