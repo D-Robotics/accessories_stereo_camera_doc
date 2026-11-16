@@ -57,7 +57,7 @@ const config = {
           },
 
           feedbackFloat: {
-            enabled: true,
+            enabled: false,
                 questionnaireUrl: "https://horizonrobotics.feishu.cn/share/base/form/shrcnLQ9OfYQO03cebdkNfOmkCh",
                 questionnaireUrlByLocale: {
                   "zh-Hans": "https://horizonrobotics.feishu.cn/share/base/form/shrcnLQ9OfYQO03cebdkNfOmkCh",
@@ -95,17 +95,10 @@ const config = {
       defer: true,
     },
     // Dify：仅加载配置脚本；embed.min.js 在 body 就绪后由 dify-config.js 动态注入
-    {
-      src: `${resolvedBaseUrl}js/dify-config.js`,
-    },
+
   ],
   headTags: [
-    {
-      tagName: "script",
-      attributes: {},
-      innerHTML:
-        "window.difyChatbotConfig=window.difyChatbotConfig||{token:'rJYrxmxmjOkjEx2c',baseUrl:'https://rdk.d-robotics.cc',inputs:{},systemVariables:{},userVariables:{},dynamicScript:true};",
-    },
+
     {
       tagName: "meta",
       attributes: {
@@ -159,7 +152,7 @@ const config = {
       }),
     ],
   ],
-  plugins: [
+  plugins: ['@d-robotics/docusaurus-plugin-guaji',
     require.resolve("./src/plugins/sidebar-scope-config-plugin"),
     [
       "docusaurus-plugin-copy-page-button",
