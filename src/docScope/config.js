@@ -1,5 +1,5 @@
 export const DOC_SCOPE_DIMENSIONS = {
-  product: {queryParam: 'p', default: 'RDK X5', label: 'RDK X5'},
+  product: {queryParam: 'p', default: 'GS130W', label: 'GS130W'},
   version: {queryParam: 'v', default: '', label: 'All'},
 };
 

@@ -7,7 +7,11 @@ const path = require('path');
 const { pathToFileURL } = require('url');
 
 const matrixJsonPath = path.join(__dirname, '../../src/context/doc-scope-matrix.json');
-const { VERSION_PRODUCT_MATRIX } = require(matrixJsonPath);
+const {
+  VERSION_PRODUCT_MATRIX,
+  PRODUCT_VERSION_MATRIX,
+  PRODUCTS,
+} = require(matrixJsonPath);
 
 const GENERATED_SIDEBAR_CONFIG_ALIAS = '@generated/generated-sidebar-config.json';
 const GENERATED_SIDEBAR_CONFIG_FILENAME = 'generated-sidebar-config.json';
@@ -27,8 +31,13 @@ let _canonicalLookup = null;
 function getCanonicalLookup() {
   if (!_canonicalLookup) {
     const map = new Map();
-    for (const list of Object.values(VERSION_PRODUCT_MATRIX)) {
-      for (const canonical of list) {
+    const names = [
+      ...(Array.isArray(PRODUCTS) ? PRODUCTS : []),
+      ...Object.keys(PRODUCT_VERSION_MATRIX || {}),
+      ...Object.values(VERSION_PRODUCT_MATRIX || {}).flat(),
+    ];
+    for (const canonical of names) {
+      if (canonical) {
         map.set(normalizeProductKey(canonical), canonical);
       }
     }

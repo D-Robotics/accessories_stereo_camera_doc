@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 4
+title: 硬件说明
+description: GS130W 模组的结构尺寸、硬件拓扑、连接器型号与接口引脚定义。
 ---
 
 # 硬件说明

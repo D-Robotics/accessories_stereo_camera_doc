@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 4
+title: Hardware Reference
+description: Structure dimensions, hardware topology, connector models, and interface pin definitions of the GS130W module.
 ---
 
 # Hardware Reference

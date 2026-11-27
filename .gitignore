@@ -21,6 +21,10 @@ src/context/generated-sidebar-config.json
 .env.example
 scripts/_algolia_tmp/
 
+# Local migration scratch and downloaded image copies (assets are served from OSS)
+.doc-migration-work/
+static/img/accessories/
+
 # Local Pagefind artifacts (dev/temporary)
 .env.development.local
 .env.test.local

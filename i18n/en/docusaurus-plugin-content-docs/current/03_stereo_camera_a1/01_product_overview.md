@@ -1,0 +1,49 @@
+---
+sidebar_position: 1
+sidebar_label: Product Overview
+title: Product Overview
+description: Features, supported platforms, hardware interfaces, and key specifications of the RDK™ Stereo A1.
+---
+
+# Product Overview
+
+RDK™ Stereo A1 is a MIPI-based stereo depth camera equipped with dual SC132GS global shutter sensors. It supports synchronized stereo exposure and external triggering. The camera has a 70 mm baseline, single-channel resolution of 1088×1280, and a maximum output frame rate of 120 fps. With high dynamic range (HDR), high signal-to-noise ratio (40 dB), and 850/940 nm near-infrared enhancement, it is suited for robotics vision, machine vision inspection, and real-time motion monitoring applications.
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/03_stereo_camera_a1/zh/a1_product_overview.png" alt="A1 product overview" width="70%" />
+
+## Compatible Platforms
+
+The table below lists compatibility between this product and RDK developer kits:
+
+| Board Name | Support | Notes |
+| --- | --- | --- |
+| RDK X3 | Not supported | Single MIPI channel only |
+| RDK X3 Module | Not supported | - |
+| RDK X5 | Supported | - |
+| RDK X5 Module | Supported | Requires official carrier board or other carrier board |
+| RDK S100/S100P | Supported | Requires Camera expansion board |
+| RDK S600 | Supported | - |
+| Other development boards with matching MIPI pinout and dual MIPI interfaces | Supported | User must develop driver independently |
+
+## Hardware Interfaces
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/03_stereo_camera_a1/zh/a1_hardware_interfaces.jpg" alt="A1 hardware interfaces" width="70%" />
+
+1. **Right MIPI Camera interface:** used for right camera data transmission;
+2. **Left MIPI Camera interface:** used for left camera data transmission;
+
+For details, see [Hardware Reference](./04_hardware.md).
+
+## Key Specifications
+
+| Name | Description |
+| --- | --- |
+| Resolution | 1.3 MP |
+| Pixel Size | 1088×1280 (portrait) |
+| Maximum Frame Rate | 120 fps |
+| Output Format | RAW RGB 12/10/8 bit |
+| Typical Output Configuration | 1088×1280@30 fps, 10-bit<br />1088×1280@60 fps, 10-bit |
+| Stereo Baseline | 70 mm |
+| Field of View (FOV) | H: 96.8°<br />V: 115.6°<br />D: 157.2° |
+| Video Interface | MIPI CSI-2 (2-lane) |
+| Maximum Transfer Rate | 2.4 Gbps |

@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 6
+title: Downloads
+description: Download 3D drawings and related resources for the GS130W.
 ---
 
 # Downloads

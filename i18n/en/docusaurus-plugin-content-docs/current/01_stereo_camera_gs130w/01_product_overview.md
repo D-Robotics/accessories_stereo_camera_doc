@@ -1,17 +1,19 @@
-﻿---
+---
 sidebar_position: 1
+sidebar_label: Product Overview
+title: Product Overview
+description: Features, supported platforms, hardware interfaces, and key specifications of the RDK™ Stereo Camera GS130W.
 ---
 
 # Product Overview
 
-The RDK™ Stereo Camera GS130W is a MIPI-based stereo depth camera equipped with dual SC132GS global shutter sensors. It supports synchronized stereo exposure and external triggering. The camera has an 80 mm baseline, single-channel resolution of 1280×1080, and a maximum output frame rate of 120 fps. With high dynamic range (HDR), high signal-to-noise ratio (40 dB), and 850/940 nm near-infrared enhancement, it is suited for robotics vision, machine vision inspection, and real-time motion monitoring applications.
+The RDK™ Stereo Camera GS130W is a MIPI-based stereo depth camera equipped with dual SC132GS global shutter sensors. It supports synchronized stereo exposure and external triggering. The camera has an 80 mm baseline, single-channel resolution of 1280×1088, and a maximum output frame rate of 120 fps. With high dynamic range (HDR), high signal-to-noise ratio (40 dB), and 850/940 nm near-infrared enhancement, it is suited for robotics vision, machine vision inspection, and real-time motion monitoring applications.
 
 <img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_product_overview.png" alt="GS130W product overview" width="70%" />
 
+## Compatible Platforms
 
-## Compatible Boards
-
-The table below lists compatibility between this product and RDK developer kit boards:
+The table below lists compatibility between this product and RDK developer kits:
 
 | Board Name | Support | Notes |
 | --- | --- | --- |
@@ -37,11 +39,11 @@ For details, see [Hardware Reference](./04_hardware.md).
 | Name | Description |
 | --- | --- |
 | Resolution | 1.3 MP |
-| Pixel Size | 1280×1080 |
+| Pixel Size | 1280×1088 (landscape) |
 | Maximum Frame Rate | 120 fps |
 | Output Format | RAW RGB 12/10/8 bit |
-| Typical Output Configuration | 1280×1080@30fps, 10-bit<br/>1280×1080@60fps, 10-bit |
+| Typical Output Configuration | 1280×1088@30 fps, 10-bit<br />1280×1088@60 fps, 10-bit |
 | Stereo Baseline | 80 mm |
-| Field of View (FOV) | H: 115.6°<br/>V: 96.8°<br/>D: 157.2° |
+| Field of View (FOV) | H: 115.6°<br />V: 96.8°<br />D: 157.2° |
 | Video Interface | MIPI CSI-2 (2-lane) |
 | Maximum Transfer Rate | 2.4 Gbps |

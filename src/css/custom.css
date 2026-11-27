@@ -74,6 +74,41 @@ body.plugin-id-os-rdk-s600        .navbar-version-dropdown--os-rdk-s600 {
 
 /* ------------------------------------------------------------------ */
 /* 文档版本和产品选择器样式 */
+.stereo-lineup-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.5rem;
+}
+
+.stereo-lineup-table-wrap table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.stereo-lineup-table-wrap th,
+.stereo-lineup-table-wrap td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: inherit;
+  word-break: break-word;
+}
+
+.stereo-lineup-table-wrap th:first-child,
+.stereo-lineup-table-wrap td:first-child {
+  width: 5.5rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.stereo-lineup-image {
+  max-width: 120px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .doc-scope-selectors {
   display: flex;
   gap: 1rem;
@@ -121,7 +156,7 @@ body.plugin-id-os-rdk-s600        .navbar-version-dropdown--os-rdk-s600 {
 
 .navbar__item .doc-scope-menu__control {
   min-width: 140px;
-  max-width: 220px;
+  max-width: 260px;
 }
 
 .navbar__item .doc-scope-menu__trigger {

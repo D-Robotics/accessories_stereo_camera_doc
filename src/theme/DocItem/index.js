@@ -71,10 +71,15 @@ function findClosestVisibleDoc(items, version, product, currentPathname) {
     return null;
   }
 
+  const currentTail = splitPathSegments(currentPathname).pop() || '';
+
   let best = null;
   let bestScore = -1;
   for (const href of visibleLinks) {
-    const score = commonPrefixScore(currentPathname, href);
+    const hrefTail = splitPathSegments(href).pop() || '';
+    const score =
+      commonPrefixScore(currentPathname, href) +
+      (currentTail && hrefTail === currentTail ? 10 : 0);
     if (score > bestScore) {
       best = href;
       bestScore = score;
