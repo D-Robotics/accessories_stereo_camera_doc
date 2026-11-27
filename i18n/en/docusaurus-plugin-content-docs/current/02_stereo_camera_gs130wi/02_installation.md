@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
-title: "Installation Guide"
+title: Installation Guide
+description: Required items, FFC/FPC cable connection steps, and development board installation for the GS130WI module.
 ---
 
 # Installation Guide
@@ -44,7 +45,7 @@ The following items are required to install the module:
 
 :::warning Caution
 
-The GS130W module and GS130WI module require opposite FFC/FPC cable insertion directions. Pay attention to distinguish them and do not reverse the connection.
+The GS130WI, A1, and A1P modules require the opposite FFC/FPC cable insertion direction from the GS130W module. Pay attention to distinguish them and do not reverse the connection.
 
 :::
 
@@ -90,9 +91,22 @@ After installation, the overall connection of the GS130WI module, RDK S100, and 
 <img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_connection_s100-2.png" alt="GS130WI connected to RDK S100" width="80%" />
 
 </TabItem>
+<TabItem value="RDK S600">
+
+1. Open the MIPI Camera connector latch on the RDK S600.
+2. Insert the other end of the FFC/FPC cable horizontally into the MIPI Camera connector with the contact side facing the PCB (facing up), then press the connector latch closed.
+3. Repeat for the second FFC/FPC cable to complete the connection between the FFC/FPC cables and the RDK S600 MIPI Camera interfaces.
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_ffc_to_board_s600.png" alt="FFC connected to RDK S600" width="70%" />
+
+After installation, the overall connection of the GS130WI module, RDK S600, and FFC/FPC cables is shown below.
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_connection_s600.png" alt="GS130WI connected to RDK S600" width="80%" />
+
+</TabItem>
 </Tabs>
 
-### Connect the IMU Timestamp Interface
+### Connect the IMU INT Interface
 
 :::info Note
 

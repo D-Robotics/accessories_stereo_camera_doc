@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
-title: "Hardware Reference"
+title: Hardware Reference
+description: Structure dimensions, hardware topology, connector models, and interface pin definitions of the GS130WI module.
 ---
 
 # Hardware Reference
@@ -66,10 +67,10 @@ The connector pinout is shown in the table below:
 | 15 | N/A | |
 | 16 | GND | |
 | 17 | RESET | Connected to the Camera Sensor XSHUTDN pin for hardware reset of the sensor chip |
-| 18 | FSYNC | Connected to the Camera Sensor TRIGL/FSYNC pin to enable exposure in Slave mode<br/>If the IMU interrupt selection switch is set to LPWM: connected to the IMU INT2 pin to input Fsync rising/falling edge signals to the IMU |
+| 18 | FSYNC | Connected to the Camera Sensor TRIGL/FSYNC pin to enable exposure in Slave mode<br />If the IMU interrupt selection switch is set to LPWM: connected to the IMU INT2 pin to input Fsync rising/falling edge signals to the IMU |
 | 19 | GND | |
-| 20 | SCL | Connected to the Camera Sensor SCL pin for sensor configuration<br/>Connected to the IMU SCL pin for IMU configuration and IMU data readout |
-| 21 | SDA | Connected to the Camera Sensor SDA pin for sensor configuration<br/>Connected to the IMU SDA pin for IMU configuration and IMU data readout |
+| 20 | SCL | Connected to the Camera Sensor SCL pin for sensor configuration<br />Connected to the IMU SCL pin for IMU configuration and IMU data readout |
+| 21 | SDA | Connected to the Camera Sensor SDA pin for sensor configuration<br />Connected to the IMU SDA pin for IMU configuration and IMU data readout |
 | 22 | 3V3 | |
 
 #### ② Left MIPI Camera Interface
@@ -118,7 +119,7 @@ The connector pinout is shown in the table below:
 | PIN | Name | Description |
 | --- | --- | --- |
 | 1 | INT1 | Connected to the IMU INT1 pin to route this pin function externally |
-| 2 | INT2 | If the IMU interrupt selection switch is set to LPWM: N/A<br/>If the IMU interrupt selection switch is set to EXT: connected to the IMU INT2 pin to route this pin function externally |
+| 2 | INT2 | If the IMU interrupt selection switch is set to LPWM: N/A<br />If the IMU interrupt selection switch is set to EXT: connected to the IMU INT2 pin to route this pin function externally |
 | 3 | GND | |
 
 #### ④ IMU Interrupt Selection Switch

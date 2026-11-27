@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: 硬件说明
+description: GS130WI 模组的结构尺寸、硬件拓扑、连接器型号与接口引脚定义。
 ---
 
 # 硬件说明
@@ -65,10 +67,10 @@ GS130WI 模组的两端各有一个安装孔，尺寸信息如下图（Unit: mm�
 | 15 | N/A | |
 | 16 | GND | |
 | 17 | RESET | 连接 Camera Sensor 的 XSHUTDN 引脚，用于对 Sensor Chip 进行硬件复位 |
-| 18 | FSYNC | 连接 Camera Sensor 的 TRIGL/FSYNC 引脚，用于对 Slave 模式下的 Sensor 使能曝光<br/>若 IMU 中断选择开关选择 LPWM：连接 IMU 的 INT2 引脚，用于向 IMU 输入 Fsync 上升/下降沿信号 |
+| 18 | FSYNC | 连接 Camera Sensor 的 TRIGL/FSYNC 引脚，用于对 Slave 模式下的 Sensor 使能曝光<br />若 IMU 中断选择开关选择 LPWM：连接 IMU 的 INT2 引脚，用于向 IMU 输入 Fsync 上升/下降沿信号 |
 | 19 | GND | |
-| 20 | SCL | 连接 Camera Sensor 的 SCL 引脚，用于对 Sensor 进行设置<br/>连接 IMU 的 SCL 引脚，用于对 IMU 进行设置和读取 IMU 数据 |
-| 21 | SDA | 连接 Camera Sensor 的 SDA 引脚，用于对 Sensor 进行设置<br/>连接 IMU 的 SDA 引脚，用于对 IMU 进行设置和读取 IMU 数据 |
+| 20 | SCL | 连接 Camera Sensor 的 SCL 引脚，用于对 Sensor 进行设置<br />连接 IMU 的 SCL 引脚，用于对 IMU 进行设置和读取 IMU 数据 |
+| 21 | SDA | 连接 Camera Sensor 的 SDA 引脚，用于对 Sensor 进行设置<br />连接 IMU 的 SDA 引脚，用于对 IMU 进行设置和读取 IMU 数据 |
 | 22 | 3V3 | |
 
 #### ② 左目 MIPI Camera 接口
@@ -117,7 +119,7 @@ GS130WI 模组的两端各有一个安装孔，尺寸信息如下图（Unit: mm�
 | PIN | Name | Description |
 | --- | --- | --- |
 | 1 | INT1 | 连接 IMU 的 INT1 引脚，用于将该引脚功能引出 |
-| 2 | INT2 | 若 IMU 中断选择开关选择 LPWM：N/A<br/>若 IMU 中断选择开关选择 EXT：连接 IMU 的 INT2 引脚，用于将该引脚功能引出 |
+| 2 | INT2 | 若 IMU 中断选择开关选择 LPWM：N/A<br />若 IMU 中断选择开关选择 EXT：连接 IMU 的 INT2 引脚，用于将该引脚功能引出 |
 | 3 | GND | |
 
 #### ④ IMU 中断选择开关

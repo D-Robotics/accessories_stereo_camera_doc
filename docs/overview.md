@@ -1,11 +1,67 @@
 ---
 sidebar_position: 0
-slug: /overview
+sidebar_label: RDK 双目摄像头用户手册
+title: RDK 双目摄像头用户手册
+description: RDK 双目摄像头模组总览，对比 GS130W、GS130WI、A1、A1P 的适用平台、分辨率、基线与 IMU 配置。
 ---
 
-# RDK 双目摄像头手册
+# RDK 双目摄像头用户手册
 
-本文档面向 D-Robotics RDK 开发者套件配套的双目摄像头模组，提供选型、安装、点亮与二次开发指引。
+本文档面向 D-Robotics RDK™ 开发者套件配套的双目摄像头模组，提供选型、安装、点亮与二次开发指引。
+
+## 产品简介
+
+RDK™ 双目摄像头模组适用于机器人视觉、机器视觉检测及运动姿态感知等应用场景。目前，D-Robotics 已推出 4 款双目摄像头模组。
+
+<div className="stereo-lineup-table-wrap" style={{ overflowX: 'auto' }}>
+
+<table style={{ tableLayout: 'fixed', width: '100%', minWidth: '960px' }}>
+  <thead>
+    <tr>
+      <th style={{ width: '16%', whiteSpace: 'normal' }}>产品名称</th>
+      <th style={{ width: '21%', whiteSpace: 'normal' }}><a href="/accessories_stereo_camera_doc/stereo_camera_gs130w/product_overview?p=GS130W">RDK™ Stereo Camera GS130W</a></th>
+      <th style={{ width: '21%', whiteSpace: 'normal' }}><a href="/accessories_stereo_camera_doc/stereo_camera_gs130wi/product_overview?p=GS130WI">RDK™ Stereo Camera GS130WI</a></th>
+      <th style={{ width: '21%', whiteSpace: 'normal' }}><a href="/accessories_stereo_camera_doc/stereo_camera_a1/product_overview?p=A1">RDK™ Stereo A1</a></th>
+      <th style={{ width: '21%', whiteSpace: 'normal' }}><a href="/accessories_stereo_camera_doc/stereo_camera_a1p/product_overview?p=A1P">RDK™ Stereo A1P</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>产品图片</td>
+      <td><img className="stereo-lineup-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/overview/zh/lineup_gs130w.png" alt="RDK Stereo Camera GS130W" /></td>
+      <td><img className="stereo-lineup-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/overview/zh/lineup_gs130wi.png" alt="RDK Stereo Camera GS130WI" /></td>
+      <td><img className="stereo-lineup-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/overview/zh/lineup_a1.png" alt="RDK Stereo A1" /></td>
+      <td><img className="stereo-lineup-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/overview/zh/lineup_a1p.png" alt="RDK Stereo A1P" /></td>
+    </tr>
+    <tr>
+      <td>适用平台</td>
+      <td colSpan="4">RDK X5、RDK S100/S100P、RDK S600</td>
+    </tr>
+    <tr>
+      <td>双目分辨率</td>
+      <td>横屏 1280×1088</td>
+      <td>竖屏 1088×1280</td>
+      <td>竖屏 1088×1280</td>
+      <td>竖屏 1088×1280</td>
+    </tr>
+    <tr>
+      <td>双目基线长度</td>
+      <td>80 mm</td>
+      <td>70 mm</td>
+      <td>70 mm</td>
+      <td>70 mm</td>
+    </tr>
+    <tr>
+      <td>IMU 型号</td>
+      <td>无</td>
+      <td>ICM42688-P</td>
+      <td>无</td>
+      <td>ICM42607-C</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 ## 文档结构
 
@@ -19,18 +75,3 @@ slug: /overview
 | 硬件说明 | 结构尺寸、接口定义、拓扑与引脚说明 |
 | 软件说明 | API 说明、驱动/SDK 使用与二次开发指引 |
 | 资料下载 | 规格书、Datasheet、3D 图纸等参考资料 |
-
-## 产品文档状态
-
-下表列出当前双目相机文档收录情况。**可用**表示已提供完整在线手册，可点击产品名称进入对应章节。
-
-| 产品名称 | 适用平台 | 手册状态 |
-| --- | --- | --- |
-| [RDK Stereo Camera GS130W](./01_stereo_camera_gs130w/01_product_overview.md) | RDK X5、RDK X5 Module、RDK S100、RDK S100P、RDK S600 | <span className="doc-status-badge doc-status-badge--available">可用</span> |
-| [RDK Stereo Camera GS130WI](./02_stereo_camera_gs130wi/01_product_overview.md) | RDK X5、RDK X5 Module、RDK S100、RDK S100P、RDK S600 | <span className="doc-status-badge doc-status-badge--available">可用</span> |
-
-## 产品简介
-
-**RDK Stereo Camera GS130W** 是基于 MIPI 的双目深度相机，搭载双颗 SC132GS 全局快门传感器，基线 80 mm，单路分辨率 1280×1080，最高 120 fps，适用于机器人视觉与机器视觉检测等场景。
-
-**RDK Stereo Camera GS130WI** 在 GS130W 基础上集成 ICM-42688-P 六轴 IMU，基线 70 mm，单路分辨率 1080×1280，同样支持 HDR、高信噪比与近红外增强，适用于需要同步视觉与姿态感知的应用。

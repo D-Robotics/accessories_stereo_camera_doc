@@ -10,5 +10,13 @@
   "sidebar.docsSidebar.category.GS130WI 双目摄像头模组": {
     "message": "GS130WI Stereo Camera Module (Integrated IMU)",
     "description": "The label for category GS130WI 双目摄像头模组 in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.A1 双目摄像头模组": {
+    "message": "A1 Stereo Camera Module",
+    "description": "The label for category A1 双目摄像头模组 in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.A1P 双目摄像头模组": {
+    "message": "A1P Stereo Camera Module",
+    "description": "The label for category A1P 双目摄像头模组 in sidebar docsSidebar"
   }
 }

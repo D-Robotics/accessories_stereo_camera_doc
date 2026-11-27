@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 3
+title: 快速开始
+description: 在 TROS 上安装与升级 tros.b，运行 GS130W 双目 MIPI 图像采集，并在 Web 端查看实时画面。
 ---
 
 # 快速开始
@@ -46,62 +48,66 @@ Description: TogetheROS Bot
 
 为了实现环境的立体感知能力，机器人产品中通常会搭载双目摄像头、ToF 等类型的传感器。为降低用户传感器适配和使用成本，TogetheROS.Bot 会对多种常用传感器进行封装，并抽象成 hobot_sensor 模块，支持 ROS 标准图像消息。当配置的传感器参数与接入的摄像头不符时，程序会自动适应正确的传感器类型。
 
-| 类型 | 型号 | 规格 | 支持平台 |
+| 类型 | 传感器型号 | 规格 | 支持平台 |
 | --- | --- | --- | --- |
-| 摄像头 | SC230ai | 200W | RDK X5, RDK X5 Module, RDK S100, RDK S100P |
-| 摄像头 | SC132gs | 200W | RDK X5, RDK X5 Module, RDK S100, RDK S100P |
+| 摄像头 | SC230ai | 200W | RDK X5、RDK X5 Module、RDK S100、RDK S100P |
+| 摄像头 | SC132gs | 200W | RDK X5、RDK X5 Module、RDK S100、RDK S100P |
+
+:::tip 说明
+上表中的 SC230ai、SC132gs 为图像传感器型号。本手册介绍的四款双目摄像头模组（GS130W、GS130WI、A1、A1P）均采用 SC132GS 传感器。
+:::
 
 代码仓库：[hobot_mipi_cam](https://github.com/D-Robotics/hobot_mipi_cam.git)
 
 ### 使用方式
 
-**1. 通过下述命令启动 hobot_sensor 节点**
+1. 通过下述命令启动 hobot_sensor 节点。
 
-```bash
-# 配置 tros.b 环境
-source /opt/tros/humble/setup.bash
-```
+   ```bash
+   # 配置 tros.b 环境
+   source /opt/tros/humble/setup.bash
+   ```
 
-```bash
-# launch 方式启动
-ros2 launch mipi_cam mipi_cam_dual_channel.launch.py mipi_image_width:=1280 mipi_image_height:=1088
-```
+   ```bash
+   # launch 方式启动
+   ros2 launch mipi_cam mipi_cam_dual_channel.launch.py mipi_image_width:=1280 mipi_image_height:=1088
+   ```
 
-**2. 如程序输出如下信息，说明节点已成功启动**
+2. 如程序输出如下信息，说明节点已成功启动。
 
-```text
-[INFO] [launch]: All log files can be found below /root/.ros/log/2024-09-18-19-15-26-160110-ubuntu-3931
-[INFO] [launch]: Default logging verbosity is set to INFO
-config_file_path is  /opt/tros/humble/lib/mipi_cam/config/
-Hobot shm pkg enables zero-copy with fastrtps profiles file: /opt/tros/humble/lib/hobot_shm/config/shm_fastdds.xml
-Hobot shm pkg sets RMW_FASTRTPS_USE_QOS_FROM_XML: 1
-env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
-[INFO] [mipi_cam-1]: process started with pid [3932]
-[mipi_cam-1] [WARN] [1726658126.449994704] [mipi_node]: frame_ts_type value: sensor
-[mipi_cam-1] [ERROR] [1726658126.455022356] [mipi_factory]: This is't support device type(), start defaule capture.
-[mipi_cam-1]
-[mipi_cam-1] [WARN] [1726658126.456074125] [mipi_cam]: this board support mipi:
-[mipi_cam-1] [WARN] [1726658126.456274529] [mipi_cam]: host 0
-[mipi_cam-1] [WARN] [1726658126.456333567] [mipi_cam]: host 2
-[mipi_cam-1] [WARN] [1726658128.722451045] [mipi_cam]: [init]->cap default init success.
-[mipi_cam-1]
-...
-```
+   ```text
+   [INFO] [launch]: All log files can be found below /root/.ros/log/2024-09-18-19-15-26-160110-ubuntu-3931
+   [INFO] [launch]: Default logging verbosity is set to INFO
+   config_file_path is  /opt/tros/humble/lib/mipi_cam/config/
+   Hobot shm pkg enables zero-copy with fastrtps profiles file: /opt/tros/humble/lib/hobot_shm/config/shm_fastdds.xml
+   Hobot shm pkg sets RMW_FASTRTPS_USE_QOS_FROM_XML: 1
+   env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+   [INFO] [mipi_cam-1]: process started with pid [3932]
+   [mipi_cam-1] [WARN] [1726658126.449994704] [mipi_node]: frame_ts_type value: sensor
+   [mipi_cam-1] [ERROR] [1726658126.455022356] [mipi_factory]: This is't support device type(), start defaule capture.
+   [mipi_cam-1]
+   [mipi_cam-1] [WARN] [1726658126.456074125] [mipi_cam]: this board support mipi:
+   [mipi_cam-1] [WARN] [1726658126.456274529] [mipi_cam]: host 0
+   [mipi_cam-1] [WARN] [1726658126.456333567] [mipi_cam]: host 2
+   [mipi_cam-1] [WARN] [1726658128.722451045] [mipi_cam]: [init]->cap default init success.
+   [mipi_cam-1]
+   ...
+   ```
 
-**3. Web 端查看双目摄像头图像**
+3. Web 端查看双目摄像头图像。
 
-由于发布原始数据，需要一个编码 JPEG 图像的节点，一个用 webservice 发布的节点，启动命令如下：
+   由于发布原始数据，需要一个编码 JPEG 图像的节点，一个用 webservice 发布的节点，启动命令如下：
 
-```bash
-# 配置 tros.b 环境
-source /opt/tros/humble/setup.bash
-```
+   ```bash
+   # 配置 tros.b 环境
+   source /opt/tros/humble/setup.bash
+   ```
 
-```bash
-# launch 方式启动
-ros2 launch mipi_cam mipi_cam_dual_channel_websocket.launch.py
-```
+   ```bash
+   # launch 方式启动
+   ros2 launch mipi_cam mipi_cam_dual_channel_websocket.launch.py
+   ```
 
-**4. PC 打开浏览器（chrome/firefox/edge）输入 `http://IP:8000`（IP 为 RDK IP 地址），点击左上方 Web 端展示即可看到双目输出的实时画面。**
+4. 在 PC 上打开浏览器（Chrome/Firefox/Edge），输入 `http://IP:8000`（IP 为 RDK IP 地址），点击左上方 Web 端展示即可看到双目输出的实时画面。
 
-<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_web_preview.png" alt="Web 端双目预览" width="80%" />
+   <img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_web_preview.png" alt="Web 端双目预览" width="80%" />

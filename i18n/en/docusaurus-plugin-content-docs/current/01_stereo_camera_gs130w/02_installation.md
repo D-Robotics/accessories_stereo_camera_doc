@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 2
+title: Installation Guide
+description: Required items, FFC/FPC cable connection steps, and development board installation for the GS130W module.
 ---
 
 # Installation Guide
@@ -18,7 +20,7 @@ Prepare the following items to install the module:
 | Item | Image |
 | --- | --- |
 | GS130W module | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_module.png" alt="GS130W module" /> |
-| Development board (supported board from Compatible Boards) | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_supported_board.png" alt="Development board" /> |
+| Development board (supported board from Compatible Platforms) | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_supported_board.png" alt="Development board" /> |
 | FFC/FPC cables x2 (22-pin, 0.5 mm pitch, same-side contacts) | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_ffc_cable.png" alt="FFC/FPC cable" /> |
 
 
@@ -42,7 +44,7 @@ Prepare the following items to install the module:
 
 :::warning Note
 
-The FFC/FPC cable insertion direction for the GS130W module is opposite to that of the GS130WI module. Take care to distinguish them and avoid reverse connection.
+The FFC/FPC cable insertion direction for the GS130W module is opposite to that of the GS130WI, A1, and A1P modules. Take care to distinguish them and avoid reverse connection.
 
 :::
 
@@ -92,6 +94,19 @@ After installation, the overall connection of the GS130W module, RDK X5 Module, 
 After installation, the overall connection of the GS130W module, RDK S100, and FFC/FPC cables is shown below.
 
 <img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connection_s100-2.png" alt="GS130W connected to RDK S100" width="80%" />
+
+</TabItem>
+<TabItem value="RDK S600">
+
+1. Open the MIPI Camera connector latch on the RDK S600.
+2. Insert the other end of the FFC/FPC cable horizontally into the MIPI Camera connector with the contacts facing toward the PCB (facing up), then press the connector latch closed.
+3. Repeat for the second FFC/FPC cable to complete the connection between the FFC/FPC cables and the RDK S600 MIPI Camera interfaces.
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_s600_board_insert_v2.jpg" alt="FFC connected to RDK S600" width="70%" />
+
+After installation, the overall connection of the GS130W module, RDK S600, and FFC/FPC cables is shown below.
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connection_s600.png" alt="GS130W connected to RDK S600" width="80%" />
 
 </TabItem>
 </Tabs>

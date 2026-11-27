@@ -1,10 +1,10 @@
 {
-  "VERSION_PRODUCT_MATRIX": {
-  },
+  "VERSION_PRODUCT_MATRIX": {},
   "PRODUCT_VERSION_MATRIX": {
-    "RDK X5": [],
-    "RDK X5 Module": [],
-    "RDK S100/S100P": []
+    "GS130W": [],
+    "GS130WI": [],
+    "A1": [],
+    "A1P": []
   },
-  "PRODUCTS": ["RDK X5", "RDK X5 Module", "RDK S100/S100P"]
+  "PRODUCTS": ["GS130W", "GS130WI", "A1", "A1P"]
 }

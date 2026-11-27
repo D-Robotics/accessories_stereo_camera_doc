@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 5
+title: Software Development
+description: Software resources and the hobot_mipi_cam package entry point for the GS130W.
 ---
 
 # Software Development

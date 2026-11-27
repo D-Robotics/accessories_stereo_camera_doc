@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: 软件说明
+description: GS130WI 的 hobot_mipi_cam 功能包与软件资源入口。
 ---
 
 # 软件说明

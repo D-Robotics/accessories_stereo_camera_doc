@@ -198,6 +198,10 @@ const config = {
         },
         items: [
           {
+            type: 'custom-DocScopeSelectors',
+            position: 'left',
+          },
+          {
             href: (() => {
               if (process.env.DOCUSAURUS_CURRENT_LOCALE === "en") {
                 return "https://developer.d-robotics.cc/en";

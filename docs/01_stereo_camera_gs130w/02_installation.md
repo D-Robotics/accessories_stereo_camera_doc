@@ -1,5 +1,7 @@
-﻿---
+---
 sidebar_position: 2
+title: 安装方法
+description: GS130W 模组的物品清单、FFC/FPC 排线连接步骤，以及适配 RDK 开发板的安装方法。
 ---
 
 # 安装方法
@@ -19,7 +21,7 @@ import DocScope from '@site/src/components/DocScope';
 | --- | --- |
 | GS130W 模组 | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_module.png" alt="GS130W 模组" /> |
 | 开发板（适用板卡中支持的开发板） | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_supported_board.png" alt="开发板" /> |
-| FFC/FPC 线缆 x2（22pin，0.5mm 间距，同面触点） | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_ffc_cable.png" alt="FFC/FPC 线缆" /> |
+| FFC/FPC 线缆 x2（22pin，0.5 mm 间距，同面触点） | <img className="table-item-image" src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_ffc_cable.png" alt="FFC/FPC 线缆" /> |
 
 
 ## 安装与连接
@@ -41,7 +43,7 @@ import DocScope from '@site/src/components/DocScope';
 
 :::warning 注意
 
-GS130W 模组与 GS130WI 模组接入 FFC/FPC 排线的方向相反，此处注意区分，切勿反接。
+GS130W 模组与 GS130WI、A1、A1P 模组接入 FFC/FPC 排线的方向相反，此处注意区分，切勿反接。
 
 :::
 
@@ -91,6 +93,19 @@ GS130W 模组与 GS130WI 模组接入 FFC/FPC 排线的方向相反，此处注�
 安装完成后，GS130W 模组、RDK S100 和 FFC/FPC 线缆的整体连接如下图所示。
 
 <img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connection_s100-2.png" alt="GS130W 与 RDK S100 连接" width="80%" />
+
+</TabItem>
+<TabItem value="RDK S600">
+
+1. 将 RDK S600 的 MIPI Camera 接口连接器锁扣打开。
+2. 将 FFC/FPC 线缆另一端的触点方向朝向 PCB 方向（朝上），水平插入 MIPI Camera 接口，然后按紧连接器锁扣。
+3. 第二根 FFC/FPC 线缆同理，完成 FFC/FPC 线缆与 RDK S600 MIPI Camera 接口的连接。
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_s600_board_insert_v2.jpg" alt="FFC 接入 RDK S600" width="70%" />
+
+安装完成后，GS130W 模组、RDK S600 和 FFC/FPC 线缆的整体连接如下图所示。
+
+<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/01_stereo_camera_gs130w/zh/gs130w_connection_s600.png" alt="GS130W 与 RDK S600 连接" width="80%" />
 
 </TabItem>
 </Tabs>

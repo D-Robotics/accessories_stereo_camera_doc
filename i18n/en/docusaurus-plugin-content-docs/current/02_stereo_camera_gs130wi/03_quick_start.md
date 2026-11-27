@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
-title: "Quick Start"
+title: Quick Start
+description: Install and upgrade tros.b on TROS, run dual MIPI image capture with the GS130WI, and view the live stream in a web browser.
 ---
 
 # Quick Start
@@ -47,62 +48,66 @@ Description: TogetheROS Bot
 
 To enable stereo environmental perception, robot products often use stereo cameras, ToF sensors, and similar devices. To reduce sensor adaptation and usage costs, TogetheROS.Bot wraps multiple commonly used sensors into the hobot_sensor module and publishes standard ROS image messages. When configured sensor parameters do not match the connected camera, the program automatically adapts to the correct sensor type.
 
-| Type | Model | Specification | Supported Platforms |
+| Type | Sensor Model | Specification | Supported Platforms |
 | --- | --- | --- | --- |
 | Camera | SC230ai | 2 MP | RDK X5, RDK X5 Module, RDK S100, RDK S100P |
 | Camera | SC132gs | 2 MP | RDK X5, RDK X5 Module, RDK S100, RDK S100P |
+
+:::tip Note
+SC230ai and SC132gs in the table above are image sensor models. All four stereo camera modules covered in this manual (GS130W, GS130WI, A1, and A1P) use the SC132GS sensor.
+:::
 
 Code repository: [hobot_mipi_cam](https://github.com/D-Robotics/hobot_mipi_cam.git)
 
 ### Usage
 
-**1. Start the hobot_sensor node with the following commands**
+1. Start the hobot_sensor node with the following commands.
 
-```bash
-# Configure tros.b environment
-source /opt/tros/humble/setup.bash
-```
+   ```bash
+   # Configure tros.b environment
+   source /opt/tros/humble/setup.bash
+   ```
 
-```bash
-# Launch
-ros2 launch mipi_cam mipi_cam_dual_channel.launch.py mipi_image_width:=1088 mipi_image_height:=1280
-```
+   ```bash
+   # Launch
+   ros2 launch mipi_cam mipi_cam_dual_channel.launch.py mipi_image_width:=1088 mipi_image_height:=1280
+   ```
 
-**2. If the program outputs the following information, the node has started successfully**
+2. If the program outputs the following information, the node has started successfully.
 
-```text
-[INFO] [launch]: All log files can be found below /root/.ros/log/2024-09-18-19-15-26-160110-ubuntu-3931
-[INFO] [launch]: Default logging verbosity is set to INFO
-config_file_path is  /opt/tros/humble/lib/mipi_cam/config/
-Hobot shm pkg enables zero-copy with fastrtps profiles file: /opt/tros/humble/lib/hobot_shm/config/shm_fastdds.xml
-Hobot shm pkg sets RMW_FASTRTPS_USE_QOS_FROM_XML: 1
-env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
-[INFO] [mipi_cam-1]: process started with pid [3932]
-[mipi_cam-1] [WARN] [1726658126.449994704] [mipi_node]: frame_ts_type value: sensor
-[mipi_cam-1] [ERROR] [1726658126.455022356] [mipi_factory]: This is't support device type(), start defaule capture.
-[mipi_cam-1]
-[mipi_cam-1] [WARN] [1726658126.456074125] [mipi_cam]: this board support mipi:
-[mipi_cam-1] [WARN] [1726658126.456274529] [mipi_cam]: host 0
-[mipi_cam-1] [WARN] [1726658126.456333567] [mipi_cam]: host 2
-[mipi_cam-1] [WARN] [1726658128.722451045] [mipi_cam]: [init]->cap default init success.
-[mipi_cam-1]
-...
-```
+   ```text
+   [INFO] [launch]: All log files can be found below /root/.ros/log/2024-09-18-19-15-26-160110-ubuntu-3931
+   [INFO] [launch]: Default logging verbosity is set to INFO
+   config_file_path is  /opt/tros/humble/lib/mipi_cam/config/
+   Hobot shm pkg enables zero-copy with fastrtps profiles file: /opt/tros/humble/lib/hobot_shm/config/shm_fastdds.xml
+   Hobot shm pkg sets RMW_FASTRTPS_USE_QOS_FROM_XML: 1
+   env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+   [INFO] [mipi_cam-1]: process started with pid [3932]
+   [mipi_cam-1] [WARN] [1726658126.449994704] [mipi_node]: frame_ts_type value: sensor
+   [mipi_cam-1] [ERROR] [1726658126.455022356] [mipi_factory]: This is't support device type(), start defaule capture.
+   [mipi_cam-1]
+   [mipi_cam-1] [WARN] [1726658126.456074125] [mipi_cam]: this board support mipi:
+   [mipi_cam-1] [WARN] [1726658126.456274529] [mipi_cam]: host 0
+   [mipi_cam-1] [WARN] [1726658126.456333567] [mipi_cam]: host 2
+   [mipi_cam-1] [WARN] [1726658128.722451045] [mipi_cam]: [init]->cap default init success.
+   [mipi_cam-1]
+   ...
+   ```
 
-**3. View stereo camera images in the web browser**
+3. View stereo camera images in the web browser.
 
-Because raw data is published, a node to encode JPEG images and a node to publish via webservice are required. Start them with:
+   Because raw data is published, a node to encode JPEG images and a node to publish via webservice are required. Start them with:
 
-```bash
-# Configure tros.b environment
-source /opt/tros/humble/setup.bash
-```
+   ```bash
+   # Configure tros.b environment
+   source /opt/tros/humble/setup.bash
+   ```
 
-```bash
-# Launch
-ros2 launch mipi_cam mipi_cam_dual_channel_websocket.launch.py
-```
+   ```bash
+   # Launch
+   ros2 launch mipi_cam mipi_cam_dual_channel_websocket.launch.py
+   ```
 
-**4. On a PC, open a browser (Chrome/Firefox/Edge) and enter `http://IP:8000` (IP is the RDK IP address). Click the Web display button in the upper-left corner to view the live stereo output.**
+4. On a PC, open a browser (Chrome/Firefox/Edge) and enter `http://IP:8000` (IP is the RDK IP address). Click the Web display button in the upper-left corner to view the live stereo output.
 
-<img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_web_preview.png" alt="Web stereo preview" width="80%" />
+   <img src="https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/accessories/02_stereo_camera_gs130wi/zh/gs130wi_web_preview.png" alt="Web stereo preview" width="80%" />
